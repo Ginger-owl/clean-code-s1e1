@@ -4,47 +4,65 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .hero {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .hero__img {
   width: 100%;
 }
+
 .hero__link {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.hero { text-align: center;
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
 }
-}
+
 .app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task__label, .task__input, .add-task__input {
+.task__label,
+.task__input,
+.add-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .add-task__group {
   display: flex;
 }
+
 .tasks__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
-.tasks__item, .tasks__title {
-  list-style:none;
+
+.tasks__item,
+.tasks__title {
+  list-style: none;
 }
-.add-task__input, .task__input, .task__check, .add-task__btn, .task__btn{
-  outline:none;
+
+.add-task__input,
+.task__input,
+.task__check,
+.add-task__btn,
+.task__btn{
+  outline: none;
 }
-.add-task__btn, .task__btn {
+
+.add-task__btn,
+.task__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -53,9 +71,12 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.add-task__btn:hover, .task__btn:hover {
+
+.add-task__btn:hover,
+.task__btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .tasks__title,
 .new-task__title {
@@ -67,7 +88,9 @@
   margin: 0;
   text-transform: uppercase;
 }
-.add-task__input, .task__input {
+
+.add-task__input,
+.task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,7 +102,9 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.add-task__input:focus, .task__input:focus {
+
+.add-task__input:focus,
+.task__input:focus {
   color: #333;
 }
 
@@ -88,6 +113,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .add-task__input {
   width: 318px;
 }
@@ -97,24 +123,29 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tasks__item > .task__check, .task__label, .task__input, .task__btn {
+
+.task__check,
+.task__label,
+.task__input,
+.task__btn {
   vertical-align: middle;
 }
 
 .task__check {
   margin: 0 10px;
 }
+
 .task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task__input {
   width: 226px
 }
@@ -123,6 +154,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .btn-delete__img:hover {
   transform: rotateZ(0);
 }
@@ -135,14 +167,14 @@
 
 /* Edit Task */
 .tasks__item .task__input {
-  display:none
+  display: none
 }
 
 .tasks__item-edited .task__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .tasks__item-edited .task__label {
-  display:none;
+  display: none;
 }
