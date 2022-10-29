@@ -7,19 +7,20 @@
 </head>
 <body>
   <div class="body__wrapper">
-    <div class="hero">
+    <aside class="hero">
       <img class="hero__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix dividing task on 4 groups (Do, Plan, Delegate, Elimenate) based on their Importance and Urgency">
       <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="app">
-      <div class="add-task">
+    </aside>
+    <article class="app">
+      <section class="add-task">
         <label class="add-task__title" for="add-task__input">Add Item</label>
         <div class="add-task__group task-row-wrapper">
           <input class="add-task__input" id="add-task__input" type="text">
           <button class="add-task__btn" >Add</button>
         </div>
-      </div>
-      <h3 class="tasks__title">Todo</h3>
+      </section>
+      <section class="tasks tasks-incompleted">
+        <h3 class="tasks__title">Todo</h3>
       <ul class="tasks__list tasks__list-incompleted">
         <li class="tasks__item">
           <input class="task__check" type="checkbox">
@@ -40,7 +41,9 @@
           </button>
         </li>
       </ul>
-      <h3 class="tasks__title">Completed</h3>
+      </section>
+      <section class="tasks tasks-completed">
+        <h3 class="tasks__title">Completed</h3>
       <ul class="tasks__list tasks__list-completed">
         <li class="tasks__item">
           <input class="task__check" type="checkbox" checked>
@@ -52,7 +55,8 @@
           </button>
         </li>
       </ul>
-    </div>
+      </section>
+    </article>
   </div>
   
   <script src="app.js"></script>
