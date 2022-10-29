@@ -3,6 +3,8 @@
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 .hero {
@@ -18,12 +20,6 @@
 
 .hero__link {
   font-family: fantasy, cursive;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    text-align: center;
-  }
 }
 
 .app {
@@ -177,4 +173,10 @@
 
 .tasks__item-edited .task__label {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
 }
