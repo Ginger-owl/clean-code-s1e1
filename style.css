@@ -79,7 +79,7 @@
 
 /* Heading */
 .tasks__title,
-.new-task__title {
+.add-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -109,7 +109,7 @@
 }
 
 /* New Task */
-.new-task__title {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
