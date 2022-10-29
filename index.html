@@ -6,52 +6,55 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="hero">
-    <img class="hero__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix dividing task on 4 groups (Do, Plan, Delegate, Elimenate) based on their Importance and Urgency">
-    <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="centered-main-page-element">
-    <div class="add-task" id="topSectionForAddingElementToList">
-      <label class="new-task__title" for="new-task">Add Item</label>
-      <div class="add-task__group task-row-wrapper">
-        <input class="add-task__input task" id="new-task" type="text">
-        <button class="add-task__btn" >Add</button>
-      </div>
+  <div class="body__wrapper">
+    <div class="hero">
+      <img class="hero__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix dividing task on 4 groups (Do, Plan, Delegate, Elimenate) based on their Importance and Urgency">
+      <a class="hero__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <h3 class="tasks__title">Todo</h3>
-    <ul class="tasks__list" id="incompleteTasks">
-      <li class="tasks__item">
-        <input class="task__check" type="checkbox">
-        <label class="task__label task">Pay Bills</label>
-        <input class="task__input task" type="text">
-        <button class="task__btn task__btn-edit edit">Edit</button>
-        <button class="task__btn task__btn-delete delete">
-          <img class="btn-delete__img" src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
-        </button>
-      </li>
-      <li class="tasks__item    tasks__item-edited editMode">
-        <input class="task__check" type="checkbox">
-        <label class="task__label task">Go Shopping</label>
-        <input class="task__input task" type="text" value="Go Shopping">
-        <button class="task__btn task__btn-edit edit">Save</button>
-        <button class="task__btn task__btn-delete delete">
-          <img src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
-        </button>
-      </li>
-    </ul>
-    <h3 class="tasks__title">Completed</h3>
-    <ul class="tasks__list" id="completed-tasks">
-      <li class="tasks__item">
-        <input class="task__check" type="checkbox" checked>
-        <label class="task__label task">See the Doctor</label>
-        <input class="task__input task" type="text">
-        <button class="task__btn task__btn-edit edit">Edit</button>
-        <button class="task__btn task__btn-delete delete">
-          <img class="btn-delete__img" src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
-        </button>
-      </li>
-    </ul>
+    <div class="app centered-main-page-element">
+      <div class="add-task" id="topSectionForAddingElementToList">
+        <label class="new-task__title" for="new-task">Add Item</label>
+        <div class="add-task__group task-row-wrapper">
+          <input class="add-task__input task" id="new-task" type="text">
+          <button class="add-task__btn" >Add</button>
+        </div>
+      </div>
+      <h3 class="tasks__title">Todo</h3>
+      <ul class="tasks__list" id="incompleteTasks">
+        <li class="tasks__item">
+          <input class="task__check" type="checkbox">
+          <label class="task__label task">Pay Bills</label>
+          <input class="task__input task" type="text">
+          <button class="task__btn task__btn-edit edit">Edit</button>
+          <button class="task__btn task__btn-delete delete">
+            <img class="btn-delete__img" src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
+          </button>
+        </li>
+        <li class="tasks__item    tasks__item-edited editMode">
+          <input class="task__check" type="checkbox">
+          <label class="task__label task">Go Shopping</label>
+          <input class="task__input task" type="text" value="Go Shopping">
+          <button class="task__btn task__btn-edit edit">Save</button>
+          <button class="task__btn task__btn-delete delete">
+            <img class="btn-delete__img" src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
+          </button>
+        </li>
+      </ul>
+      <h3 class="tasks__title">Completed</h3>
+      <ul class="tasks__list tasks__list-completed" id="completed-tasks">
+        <li class="tasks__item">
+          <input class="task__check" type="checkbox" checked>
+          <label class="task__label task">See the Doctor</label>
+          <input class="task__input task" type="text">
+          <button class="task__btn task__btn-edit edit">Edit</button>
+          <button class="task__btn task__btn-delete delete">
+            <img class="btn-delete__img" src="./remove.svg" alt="Tilted upwards pointer with 'x' symbol inside, levelling off and pointing to the concerned task when hovered">
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
+  
   <script src="app.js"></script>
 </body>
 </html>
